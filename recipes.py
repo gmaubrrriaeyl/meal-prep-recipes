@@ -13,7 +13,8 @@ def tinga(chick_lbs):
     float --> list
     Avg # romas in 28oz can is 11. Ro
     """
-
+    if isinstance(chick_lbs, str):
+        return print("Recipe: https://www.seriouseats.com/recipes/2016/01/chicken-tinga-spicy-mexican-shredded-chicken-recipe.html\nEnter a number for chicken in pounds. The function returns an ingredient list. All numbers are rounded down except salt and table- and teaspoons, which are rounded to two decimals.\n28oz can Roma Tomatos = ~11 tomatoes\nsmall can of chipotles = ~7 chipotles")
     scale = chick_lbs / (1.25)
     oil = 2 * scale
     tom_til = 2 * scale
@@ -27,7 +28,7 @@ def tinga(chick_lbs):
     chp_sau = 1 * scale
     fsh = 2 * scale
 
-    print("Scale is " + str(scale) + " for " + str(lbs) + " lbs of chicken", end = '\n\n')
+    print("Scale is " + str(scale) + " for " + str(chick_lbs) + " lbs of chicken", end = '\n\n')
     print("Ing List:", end = '\n\n')
     print(str(oil) + " Tablespoon of vegetable oil")
     print(str(tom_til) + " Tomatillos and tomatoes")
