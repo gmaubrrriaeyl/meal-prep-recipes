@@ -10,8 +10,8 @@ on an ingredient multiplier.
 def tinga(chick_lbs):
 
     """
-    float --> list
-    Avg # romas in 28oz can is 11. Ro
+    float --> list or
+    str --> str
     """
     if isinstance(chick_lbs, str):
         return print("Recipe: https://www.seriouseats.com/recipes/2016/01/chicken-tinga-spicy-mexican-shredded-chicken-recipe.html\nEnter a number for chicken in pounds. The function returns an ingredient list. All numbers are rounded down except salt and table- and teaspoons, which are rounded to two decimals.\n28oz can Roma Tomatos = ~11 tomatoes\nsmall can of chipotles = ~7 chipotles")
@@ -46,6 +46,11 @@ def tinga_scale(scale):
     tinga(scale*1.25)
 
 def granola(oat_g):
+    """
+    float --> list or
+    str --> str
+    """
+    
     if isinstance(oat_g, str):
         return print("Recipe: https://www.seriouseats.com/recipes/2017/06/crispy-homemade-granola-recipe.html\nEnter a number for oats in grams. The function returns an ingredient list. All numbers are rounded down except salt and table- and teaspoons, which are rounded to two decimals.\n1 stick of butter = 115g")
     scale = oat_g / 12
