@@ -1,6 +1,5 @@
 """
-Calculates recipe ingredient amounts based on the quantity of an
-item. Each item is unique to each recipe.
+Calculates the amount of ingredients needed for recipe given the quantity of one ingredient.
 
 Each function with a _scale suffix calculates the ingredients based
 on an ingredient multiplier. 
@@ -51,4 +50,3 @@ def ing_calc(ing_list, ing, am):
 
     for ing in ing_list:
         print(f'{round(ing["scale"]*scale, 2)} {ing["text"]}')
-
