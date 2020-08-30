@@ -1,5 +1,6 @@
 """
-Calculates the amount of ingredients needed for recipe given the quantity of one ingredient.
+Calculates recipe ingredient amounts based on the quantity of an
+item. Each item is unique to each recipe.
 
 Each function with a _scale suffix calculates the ingredients based
 on an ingredient multiplier. 
@@ -23,29 +24,36 @@ tinga = [
 
 granola = [
     {"name": "oat", "scale": 12, "text": "Grams of oats"},
-    {"name": "germ", "scale": 2, "text": "Grams of wheat germs"},
-    {"name": "flax", "scale": 4, "text": "Grams of flax seeds"},
-    {"name": "chia", "scale": 1, "text": "Grams of chia seeds"},
-    {"name": "milk", "scale": 2, "text": "Ounces of buttermilk"},
-    {"name": "butter", "scale": 2, "text": "Grams of butter"},
-    {"name": "sugar", "scale": 2, "text": "Grams of sugar"},
-    {"name": "salt", "scale": 2, "text": "Grams of salt"},
-    {"name": "pump", "scale": 2, "text": "Grams of pumpkin seeds"},
-    {"name": "alm", "scale": 1, "text": "Grams of sliced almonds"},
-    {"name": "pec", "scale": 2, "text": "Grams of pecan pieces"},
-    {"name": "oil", "scale": 2, "text": "Teaspoons of neutral oil"},
-    {"name": "salt2", "scale": 2, "text": "Grams of salt"},
-    {"name": "apr", "scale": 2, "text": "Grams of apricot"},
-    {"name": "cher", "scale": 2, "text": "Grams of cherries"},
-    {"name": "blue", "scale": 2, "text": "Grams of blueberries"},
+    {"name": "germ", "scale": 40, "text": "Grams of wheat germs"},
+    {"name": "flax", "scale": 30, "text": "Grams of flax seeds"},
+    {"name": "chia", "scale": 15, "text": "Grams of chia seeds"},
+    {"name": "milk", "scale": 8, "text": "Ounces of buttermilk"},
+    {"name": "butter", "scale": 115, "text": "Grams of butter"},
+    {"name": "sugar", "scale": 200, "text": "Grams of sugar"},
+    {"name": "salt", "scale": .5, "text": "Grams of salt"},
+    {"name": "pump", "scale": 120, "text": "Grams of pumpkin seeds"},
+    {"name": "alm", "scale": 70, "text": "Grams of sliced almonds"},
+    {"name": "pec", "scale": 65, "text": "Grams of pecan pieces"},
+    {"name": "oil", "scale": 1, "text": "Teaspoons of neutral oil"},
+    {"name": "salt2", "scale": 1/8, "text": "Teaspoons of salt"},
+    {"name": "apr", "scale": 115, "text": "Grams of apricot"},
+    {"name": "cher", "scale": 85, "text": "Grams of cherries"},
+    {"name": "blue", "scale": 55, "text": "Grams of blueberries"},
 ]
-
+cit_stk = [
+    {"name": "citrus", "scale": 1000, "text": "Grams of citrus rines"},
+    {"name": "water", "scale": 1500, "text": "Mililiters of water"},
+    {"name": "sugar", "scale": 70, "text": "Grams of sugar"},
+    {"name": "malic", "scale": 10, "text": "Grams of malic"},
+    {"name": "citric", "scale": 20, "text": "Grams of citic"},
+]
+    
 def ing_calc(ing_list, ing, am):
     for i in ing_list:
         if i['name']==str(ing):
             text = i['text']
             scale = round(am / i['scale'], 2)
-    print(f"Scale is {scale} for {am} of {text}")
+    print(f"Scale is {scale} for {am} {text}")
     print("Ing List:\n")
 
     for ing in ing_list:
