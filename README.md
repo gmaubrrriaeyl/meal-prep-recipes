@@ -4,7 +4,9 @@ Takes an amount of an ingredient in a recipe and returns the amount needed for e
 Example call:
 >ing_calc(tinga, "chick" 2)
 
+
 Scale is 1.6 for 2 lbs of chicken
+
 Ing List:
 
 2.0 lbs of chicken
