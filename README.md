@@ -2,7 +2,7 @@
 Takes an amount of an ingredient in a recipe and returns the amount needed for every other ingredient in the recipe. 
 
 Example call:
->>>ing_calc(tinga, "chick" 2)
+>ing_calc(tinga, "chick" 2)
 
 Scale is 1.6 for 2 lbs of chicken
 Ing List:
