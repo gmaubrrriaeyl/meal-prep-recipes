@@ -7,7 +7,8 @@ Example call:
 Scale is 1.6 for 2 lbs of chicken
 Ing List:
 
-2.0 lbs of chicken\n
+2.0 lbs of chicken
+
 3.2 Tablespoon of vegetable oil
 3.2 Tomatillos and tomatoes
 6.4 Cloves of garlic
