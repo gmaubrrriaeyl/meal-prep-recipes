@@ -9,6 +9,7 @@ on an ingredient multiplier.
 
 tinga = [
     {"name": "chick", "scale": 1.25, "text" : "lbs of chicken"},
+    
     {"name": "oil", "scale": 2, "text": "Tablespoon of vegetable oil"},
     {"name": "tom_til", "scale": 2, "text": "Tomatillos and tomatoes"},
     {"name": "gar", "scale": 4, "text": "Cloves of garlic"},
@@ -23,7 +24,7 @@ tinga = [
 ]
 
 granola = [
-    {"name": "oat", "scale": 12, "text": "Grams of oats"},
+    {"name": "oat", "scale": 340, "text": "Grams of oats"},
     {"name": "germ", "scale": 40, "text": "Grams of wheat germs"},
     {"name": "flax", "scale": 30, "text": "Grams of flax seeds"},
     {"name": "chia", "scale": 15, "text": "Grams of chia seeds"},
@@ -47,7 +48,17 @@ cit_stk = [
     {"name": "malic", "scale": 10, "text": "Grams of malic"},
     {"name": "citric", "scale": 20, "text": "Grams of citic"},
 ]
-    
+
+nutella = [
+    {"name": "hazelnuts", "scale": 255, "text": "Grams of hazelnuts"},
+    {"name": "water", "scale": 85, "text": "Grams/Ml of water"},
+    {"name": "sugar", "scale": 150, "text": "Grams of sugar"},
+    {"name": "syrup", "scale": 115, "text": "Grams of golden/corn syrup"},
+    {"name": "salt", "scale": 2.5, "text": "Grams of salt"},
+    {"name": "baking soda", "scale": 3, "text": "Grams of baking soda"},
+    {"name": "cocoa", "scale": 15, "text": "Grams of cocoa powder"},
+    {"name": "hazel_oil", "scale": 30, "text": "Grams of hazelnut oil"},
+]
 def ing_calc(ing_list, ing, am):
     for i in ing_list:
         if i['name']==str(ing):
