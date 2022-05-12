@@ -7,6 +7,7 @@ Example call:
 
 Scale is 1.6 for 2 lbs of chicken
 
+
 Ing List:
 
 2.0 lbs of chicken
